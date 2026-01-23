@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floats and Media Queries Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden; /* Overflow method to contain floats */
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .column {
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .col-1 {
+      width: 30%;
+      background-color: #d0eaff;
+    }
+
+    .col-2 {
+      width: 70%;
+      background-color: #eaffd0;
+    }
+
+    /* Clearfix technique */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Media Queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      .col-1, .col-2 {
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container clearfix">
+    <div class="col-1 column">
+      <h2>Sidebar</h2>
+      <p>This column is floated left and takes 30% width. It collapses below on smaller screens.</p>
+    </div>
+    <div class="col-2 column">
+      <h2>Main Content</h2>
+      <p>This column is floated right and takes 70% width. It contains the main content of the page.</p>
+      <p>We use the clearfix technique to prevent the parent container from collapsing due to floated children.</p>
+      <p>Resize the browser to see how media queries adapt the layout for smaller screens.</p>
+    </div>
+  </div>
+
+</body>
+</html>
