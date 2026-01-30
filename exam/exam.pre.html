@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pat's Recharge Shop</title>
+    <style>
+        body {
+            background-color: #f4e4bc; /* Sandy/beige background matching Minecraft theme */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #644202;
+        }
+
+        p {
+            text-align: center;
+            color: #644202;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        label {
+            width: 35%;
+            color: #f8a50a;
+            text-align: left;
+            margin-right: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #644202;
+            border-radius: 5px;
+            color: chocolate;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            margin: 0 10px;
+            color: #644202;
+        }
+
+        #products {
+            color: chocolate;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #f8a50a;
+            color: #644202;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6950a;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1 id="title">Order Form</h1>
+    <p id="description">
+        Please complete this form to help us offer you our services.
+    </p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Please Enter Your In-Game Name"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email Address"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <label id="userid" for="number">User ID:</label>
+            <input
+                type="number"
+                id="number"
+                name="userid"
+                placeholder="Enter Your User-ID"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <label id="serverid" for="number">Server ID:</label>
+            <input
+                type="number"
+                id="serverid"
+                name="serverid"
+                placeholder="Enter Your Server-ID"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <label for="products">Select Our Products:</label>
+            <select id="products" name="ingame-currency">
+                <option value="10">10 Diamonds</option>
+                <option value="20">20 Diamonds</option>
+                <option value="50">50 Diamonds</option>
+                <option value="100">100 Diamonds</option>
+                <option value="1000">1000 Diamonds</option>
+            </select>
+        </div>
+        <p>Do you want to receive future promotions and notifications from our shop?</p>
+        <div class="radio-group">
+            <input type="radio" id="promo-yes" name="promo-active" value="yes">
+            <label for="promo-yes">Yes</label>
+            <input type="radio" id="promo-no" name="promo-active" value="no">
+            <label for="promo-no">No</label>
+        </div>
+        <p>Select where to receive receipts</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="receipt-email" value="Email">
+            <label for="receipt-email">Email</label><br>
+            <input type="checkbox" id="receipt-mail" value="In-game Mail">
+            <label for="receipt-mail">In-Game Mail</label>
+        </div>
+        <div class="form-group">
+            <label for="comments">Feedback and Suggestions:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your comments here..."></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+</html>
+
+
+
