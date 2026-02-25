@@ -1,0 +1,153 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-light: #f8f9fa;
+$background-dark: #121212;
+$text-light: #ffffff;
+$text-dark: #000000;
+$font-size: 16px;
+$spacing: 20px;
+
+// Mixins
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($color, $blur) {
+  box-shadow: 0 2px $blur $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Base styles (Light Mode)
+body {
+  font-family: Arial, sans-serif;
+  font-size: $font-size;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  background-color: $background-light;
+}
+
+// Header and Footer styles
+.header, .footer {
+  background-color: lighten($primary-color, 40%);
+  padding: $spacing;
+  text-align: center;
+  @include box-shadow(rgba(0,0,0,0.1), 10px);
+}
+
+.header h1, .footer p {
+  font-size: 2em;
+  margin: 0;
+}
+
+// Main content styles
+main {
+  padding: $spacing;
+
+  .about {
+    h2 {
+      font-size: 1.5em;
+      color: $secondary-color;
+    }
+
+    p {
+      font-size: $font-size;
+      line-height: 1.5;
+    }
+  }
+
+  .features {
+    h2 {
+      font-size: 1.5em;
+      color: $secondary-color;
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        @include rounded-corners(5px);
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: lighten($primary-color, 50%);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: lighten($primary-color, 30%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .example {
+    h2 {
+      font-size: 1.5em;
+      color: $secondary-color;
+    }
+
+    .example-text {
+      @include rounded-corners(10px);
+      padding: 15px;
+      background-color: lighten($primary-color, 50%);
+      @include box-shadow(rgba(0,0,0,0.15), 8px);
+    }
+  }
+}
+
+// Dark Mode
+body.dark-mode {
+  background-color: $background-dark;
+  color: $text-light;
+}
+
+body.dark-mode .header,
+body.dark-mode .footer {
+  background-color: darken($primary-color, 20%);
+  color: $text-light;
+}
+
+body.dark-mode main {
+  .about h2,
+  .features h2,
+  .example h2 {
+    color: lighten($secondary-color, 40%);
+  }
+
+  .feature-list li {
+    background-color: darken($primary-color, 20%);
+    color: $text-light;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .example-text {
+    background-color: darken($primary-color, 20%);
+    color: $text-light;
+  }
+}
+
+
+// Responsive design
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header h1, .footer p {
+    font-size: 1.5em;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

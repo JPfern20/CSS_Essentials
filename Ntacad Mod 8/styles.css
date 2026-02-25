@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #007bff;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.header, .footer {
+  background-color: rgb(204, 228.6, 255);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1, .footer p {
+  font-size: 2em;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+main .about h2 {
+  font-size: 1.5em;
+  color: #6c757d;
+}
+main .about p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+main .features h2 {
+  font-size: 1.5em;
+  color: #6c757d;
+}
+main .features .feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+main .features .feature-list li {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+main .features .feature-list li:hover {
+  background-color: rgb(153, 202.2, 255);
+  cursor: pointer;
+}
+main .example h2 {
+  font-size: 1.5em;
+  color: #6c757d;
+}
+main .example .example-text {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .header,
+body.dark-mode .footer {
+  background-color: rgb(0, 73.8, 153);
+  color: #ffffff;
+}
+
+body.dark-mode main .about h2,
+body.dark-mode main .features h2,
+body.dark-mode main .example h2 {
+  color: rgb(215.8369098712, 218.6566523605, 221.1630901288);
+}
+body.dark-mode main .feature-list li {
+  background-color: rgb(0, 73.8, 153);
+  color: #ffffff;
+}
+body.dark-mode main .feature-list li:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+body.dark-mode main .example-text {
+  background-color: rgb(0, 73.8, 153);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .header h1, .footer p {
+    font-size: 1.5em;
+  }
+  main {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
