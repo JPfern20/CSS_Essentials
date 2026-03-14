@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Patrick Fernandez | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header" class="site-header">
+        <nav class="nav">
+            <div class="logo">JP<span>Fernandez</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="btn btn-outline">Toggle Theme</button>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="tag">Computer Engineering Student</p>
+                <h1>Hi, I'm <span>John Patrick Fernandez</span></h1>
+                <p class="subtitle">
+                    Passionate about <strong>Robotics & Autonomous Systems</strong>, Python development,
+                    and digital media production. I love solving problems and creating meaningful
+                    experiences through technology, photography, and music.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="hero-meta">
+                    <span>📍 Marilao, Bulacan, PH</span>
+                    <span>🎓 TIP Quezon City</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="about" class="card-section">
+            <h2>About Me</h2>
+            <p>
+                I'm a Computer Engineering student at the Technological Institute of the Philippines – Quezon City,
+                specializing in <strong>Robotics and Autonomous Systems (Cyber‑Physical Systems)</strong>.
+                I enjoy building Python and C++ projects that challenge my problem‑solving skills and creativity.
+            </p>
+            <p>
+                Outside of coding, I express my creativity through <strong>photography</strong>, <strong>video editing</strong>,
+                and <strong>music</strong> as a pianist. I thrive in collaborative environments and I’m always eager
+                to learn, adapt, and make a meaningful impact.
+            </p>
+        </section>
+
+        <section id="skills" class="card-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Python &amp; C++ Programming</li>
+                        <li>Computer Networks &amp; Basic Troubleshooting</li>
+                        <li>Computer Assembly &amp; Hardware Troubleshooting</li>
+                        <li>Computer‑Aided Drafting</li>
+                        <li>Data Visualization &amp; Reporting (Excel, PowerPoint)</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Digital Media</h3>
+                    <ul>
+                        <li>Photography &amp; Event Coverage</li>
+                        <li>Video Editing &amp; Film Making</li>
+                        <li>Graphic Design &amp; Image Processing</li>
+                        <li>Social Media Content Creation</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Excellent Communication (English &amp; Filipino)</li>
+                        <li>Client Collaboration</li>
+                        <li>Problem‑Solving &amp; Critical Thinking</li>
+                        <li>Adaptability &amp; Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skill-bars">
+                <div class="skill-bar">
+                    <span>Python</span>
+                    <div class="bar"><div class="fill" data-level="80"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>C++</span>
+                    <div class="bar"><div class="fill" data-level="70"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Digital Media Production</span>
+                    <div class="bar"><div class="fill" data-level="85"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Communication</span>
+                    <div class="bar"><div class="fill" data-level="90"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="card-section">
+            <h2>Projects</h2>
+            <p>Select a category to filter projects.</p>
+            <div class="filter-buttons">
+                <button class="btn btn-small btn-primary" data-filter="all">All</button>
+                <button class="btn btn-small btn-outline" data-filter="engineering">Engineering</button>
+                <button class="btn btn-small btn-outline" data-filter="media">Digital Media</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-category="engineering">
+                    <h3>Autonomous Line‑Following Robot</h3>
+                    <p>
+                        Designed and programmed a line‑following robot using sensors and microcontrollers,
+                        focusing on control systems and real‑time decision‑making.
+                    </p>
+                    <ul>
+                        <li>Implemented sensor fusion logic in C++</li>
+                        <li>Optimized motor control for smooth navigation</li>
+                    </ul>
+                </article>
+
+                <article class="project-card" data-category="engineering">
+                    <h3>Network Troubleshooting Toolkit</h3>
+                    <p>
+                        Created a set of scripts and documentation to diagnose basic network issues,
+                        combining theoretical knowledge with hands‑on troubleshooting.
+                    </p>
+                </article>
+
+                <article class="project-card" data-category="media">
+                    <h3>Event Photography Portfolio</h3>
+                    <p>
+                        Covered various events for clients, managing photo shoots, post‑processing,
+                        and delivery with consistent quality and branding.
+                    </p>
+                </article>
+
+                <article class="project-card" data-category="media">
+                    <h3>Short Film &amp; Video Edits</h3>
+                    <p>
+                        Produced and edited short films and highlight reels using cinematic techniques,
+                        color grading, and storytelling through visuals and music.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="card-section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>On‑the‑Job Training – AzTech Computer Store</h3>
+                        <span class="timeline-meta">Meycauayan, Bulacan • 2023 – 2024</span>
+                        <button class="toggle-details btn btn-small btn-outline">Details</button>
+                    </div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li>Assisted customers with computer products and services.</li>
+                            <li>Performed basic <strong>computer assembly</strong> and troubleshooting.</li>
+                            <li>Helped maintain a reliable and organized store environment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Digital Multimedia Freelancer</h3>
+                        <span class="timeline-meta">2022 – Present</span>
+                        <button class="toggle-details btn btn-small btn-outline">Details</button>
+                    </div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li>Worked with a variety of clients for photography and video projects.</li>
+                            <li>Handled <strong>image processing</strong>, <strong>video editing</strong>, and <strong>graphic design</strong>.</li>
+                            <li>Delivered creative solutions tailored to each client’s branding and goals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card-section">
+            <h2>Contact</h2>
+            <p>If you’d like to collaborate or discuss an opportunity, feel free to reach out.</p>
+            <div class="contact-grid">
+                <div>
+                    <h3>Details</h3>
+                    <ul class="contact-list">
+                        <li><strong>Email (personal):</strong> <a href="mailto:patzzk.20@gmail.com">patzzk.20@gmail.com</a></li>
+                        <li><strong>Email (school):</strong> <a href="mailto:qjpbfernandez@tip.edu.ph">qjpbfernandez@tip.edu.ph</a></li>
+                        <li><strong>Location:</strong> Marilao, Bulacan, Philippines</li>
+                        <li><strong>Languages:</strong> English, Filipino</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Online Profiles</h3>
+                    <ul class="contact-list">
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/patfrnndz" target="_blank" rel="noopener noreferrer">linkedin.com/in/patfrnndz</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/JPfern20" target="_blank" rel="noopener noreferrer">github.com/JPfern20</a></li>
+                    </ul>
+                    <h3>Quick Message</h3>
+                    <form class="contact-form" onsubmit="return false;">
+                        <label>
+                            Name
+                            <input type="text" name="name" placeholder="Your name">
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" placeholder="you@example.com">
+                        </label>
+                        <label>
+                            Message
+                            <textarea name="message" rows="3" placeholder="Tell me about your project..."></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary">Send Mail</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> John Patrick Fernandez. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+
+        // Experience accordion
+        document.querySelectorAll('.toggle-details').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.closest('.timeline-item');
+                item.classList.toggle('open');
+            });
+        });
+
+        // Project filter
+        const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Animate skill bars on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.skill-bar .fill').forEach(fill => {
+                const level = fill.getAttribute('data-level');
+                fill.style.width = level + '%';
+            });
+        });
+    </script>
+</body>
+</html>
